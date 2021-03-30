@@ -1,7 +1,7 @@
 # HoneyFlink
 
 #### 介绍
-Flink实时流式处理框架
+Flink
 
 #### 软件架构
 软件架构说明

@@ -1,7 +1,7 @@
 # HoneyFlink
 
 #### Description
-Flink实时流式处理框架
+Flink
 
 #### Software Architecture
 Software architecture description
