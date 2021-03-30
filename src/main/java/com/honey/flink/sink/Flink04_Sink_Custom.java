@@ -1,12 +1,11 @@
 package com.honey.flink.sink;
 
-import com.honey.flink.common.WaterSensor;
+import com.honey.flink.bean.WaterSensor;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
-import org.apache.flink.streaming.api.functions.sink.SinkFunction;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

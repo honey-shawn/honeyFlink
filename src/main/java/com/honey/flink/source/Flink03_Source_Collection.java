@@ -1,14 +1,12 @@
 package com.honey.flink.source;
 
 
-import com.honey.flink.common.WaterSensor;
+import com.honey.flink.bean.WaterSensor;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static sun.misc.Version.print;
 
 public class Flink03_Source_Collection {
     public static void main(String[] args) throws Exception {

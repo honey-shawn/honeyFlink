@@ -1,6 +1,6 @@
 package com.honey.flink.sink;
 
-import com.honey.flink.common.WaterSensor;
+import com.honey.flink.bean.WaterSensor;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.connector.jdbc.JdbcConnectionOptions;
 import org.apache.flink.connector.jdbc.JdbcExecutionOptions;

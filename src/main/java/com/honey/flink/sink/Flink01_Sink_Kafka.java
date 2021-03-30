@@ -1,8 +1,7 @@
 package com.honey.flink.sink;
 
 import com.alibaba.fastjson.JSON;
-import com.honey.flink.common.WaterSensor;
-import org.apache.avro.data.Json;
+import com.honey.flink.bean.WaterSensor;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;

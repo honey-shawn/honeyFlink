@@ -1,4 +1,4 @@
-package com.honey.flink.common;
+package com.honey.flink.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

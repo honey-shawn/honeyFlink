@@ -1,13 +1,11 @@
 package com.honey.flink.transform;
 
-import com.honey.flink.common.WaterSensor;
+import com.honey.flink.bean.WaterSensor;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-
-import java.nio.file.Watchable;
 
 public class Flink13_TransForm_Max_Anonymous {
     public static void main(String[] args) throws Exception {
