@@ -19,9 +19,4 @@ public class WaterSensor {
     private Long ts;
     private Integer vc;
 
-//    public WaterSensor(String ws_001, long l, int i) {
-//        id = ws_001;
-//        ts = l;
-//        vc = i;
-//    }
 }
