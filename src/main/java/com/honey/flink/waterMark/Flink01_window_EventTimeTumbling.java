@@ -17,7 +17,8 @@ import java.time.Duration;
 public class Flink01_window_EventTimeTumbling {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-
+        env.setParallelism(1);
+        // 从端口读取数据，并转换成javaBaen
         SingleOutputStreamOperator<WaterSensor> waterSensorDs = env.socketTextStream("10.100.217.124", 9990)
                 .map(new MapFunction<String, WaterSensor>() {
                     @Override

@@ -19,6 +19,7 @@ import java.time.Duration;
 public class Flink02_window_EventTimeTumbling_LateAndSideOutPut {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        env.setParallelism(1);
 
         SingleOutputStreamOperator<WaterSensor> waterSensorDs = env.socketTextStream("10.100.217.124", 9990)
                 .map(new MapFunction<String, WaterSensor>() {
