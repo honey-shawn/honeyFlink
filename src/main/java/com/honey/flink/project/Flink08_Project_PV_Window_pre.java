@@ -30,7 +30,7 @@ import java.util.Random;
  * 基于窗口，实时统计每小时内的网站PV
  * 双重聚合处理数据倾斜
  */
-public class Flink07_Project_PV_Window_pre {
+public class Flink08_Project_PV_Window_pre {
     public static void main(String[] args) throws Exception {
         // 获取执行环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
