@@ -2,7 +2,7 @@ package com.atguigu.day12;
 
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
-import org.apache.flink.table.catalog.hive.HiveCatalog;
+//import org.apache.flink.table.catalog.hive.HiveCatalog;
 
 public class Flink08_HiveCatalog {
 
@@ -14,10 +14,10 @@ public class Flink08_HiveCatalog {
         StreamTableEnvironment tableEnv = StreamTableEnvironment.create(env);
 
         //2.创建HiveCatalog
-        HiveCatalog hiveCatalog = new HiveCatalog("myHive", "default", "input");
+//        HiveCatalog hiveCatalog = new HiveCatalog("myHive", "default", "input");
 
         //3.注册HiveCatalog
-        tableEnv.registerCatalog("myHive", hiveCatalog);
+//        tableEnv.registerCatalog("myHive", hiveCatalog);
 
         //4.使用HiveCatalog
         tableEnv.useCatalog("myHive");
